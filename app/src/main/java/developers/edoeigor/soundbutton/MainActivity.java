@@ -52,14 +52,7 @@ public class MainActivity extends AppCompatActivity {
         return Color.argb(255, 255-Color.red(colorSource), 255-Color.green(colorSource),255-Color.blue(colorSource));
     }
 
-    private int peerlaSwitch(){
-        perla = !perla;
-        if(perla){
-            return R.string.btn_text1;
-        }else{
-            return R.string.btn_text2;
-        }
-    }
+
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
