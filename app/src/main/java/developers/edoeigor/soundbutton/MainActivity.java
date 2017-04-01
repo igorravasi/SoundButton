@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 constID.setBackgroundColor(color);
                 pulsante.setTextColor(color);
                 pulsante.setBackgroundColor(colorN);
+
             }
         });
 
