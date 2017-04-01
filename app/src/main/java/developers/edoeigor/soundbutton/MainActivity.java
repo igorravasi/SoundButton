@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     boolean perla=false;
     MediaPlayer mp;
-    String [] testi= getResources().getStringArray(R.array.btn_array);
+    String [] testi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +25,12 @@ public class MainActivity extends AppCompatActivity {
         final Button pulsante = (Button)findViewById(R.id.pulsante_0);
         final ConstraintLayout constID=(ConstraintLayout)findViewById(R.id.constID);
         mp = MediaPlayer.create(this, R.raw.audio);
+        testi= getResources().getStringArray(R.array.btn_array);
 
         pulsante.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                pulsante.setText(testi[new Random().nextInt(testi.length)]);
+                pulsante.setText(testi[1]);
                 if (mp.isPlaying()){
                     mp.pause();
                 }
