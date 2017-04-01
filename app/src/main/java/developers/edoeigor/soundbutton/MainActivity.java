@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //ciao
 
     private int peerla_switch(){
         perla = !perla;
