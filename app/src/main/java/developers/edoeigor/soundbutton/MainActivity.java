@@ -13,7 +13,6 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    boolean perla=false;
     MediaPlayer mp;
     String [] testi;
 
