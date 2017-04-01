@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">SoundButton-V0</string>
-    <string name="btn_text">Peerla</string>
+    <string name="btn_text1">Peerla</string>
+    <string name="btn_text2">Cojone</string>
 </resources>

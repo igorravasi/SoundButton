@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (!perla){
-                    pulsante.setText(getResources().getString(R.string.btn_text));
-                    perla=true;
+                    pulsante.setText(getResources().getString(peerla_switch()));
+
                 }
                 else{
                     pulsante.setText("Cojone");
@@ -32,4 +32,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+
+    private int peerla_switch(){
+        perla = !perla;
+        if(perla){
+            return R.string.btn_text1;
+        }else{
+            return R.string.btn_text2;
+        }
+    }
+
 }
