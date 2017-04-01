@@ -36,7 +36,10 @@ public class MainActivity extends AppCompatActivity {
                 mp.start();
                 Random rnd = new Random();
                 int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
+                int colorN = Color.argb(255, 255-Color.red(color), 255-Color.green(color),255-Color.blue(color));
                 constID.setBackgroundColor(color);
+                pulsante.setTextColor(color);
+                pulsante.setBackgroundColor(colorN);
             }
         });
 
