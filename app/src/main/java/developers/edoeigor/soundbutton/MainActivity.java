@@ -19,15 +19,7 @@ public class MainActivity extends AppCompatActivity {
         pulsante.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!perla){
-                    pulsante.setText(getResources().getString(peerla_switch()));
-
-                }
-                else{
-                    pulsante.setText("Cojone");
-                    perla=false;
-                }
-
+                pulsante.setText(getResources().getString(peerla_switch()));
             }
         });
 
