@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">SoundButton-V0</string>
-    <string name="btn_text1">Peerla</string>
-    <string name="btn_text2">Cojone</string>
+
+    <string-array name="btn_array">
+        <item>Peerla</item>
+        <item>Cojone</item>
+        <item>Maiale</item>
+        <item>Pagliaccio</item>
+        <item>Testina</item>
+
+    </string-array>
 </resources>

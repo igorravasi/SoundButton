@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     boolean perla=false;
     MediaPlayer mp;
+    String [] testi= getResources().getStringArray(R.array.btn_array);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +29,13 @@ public class MainActivity extends AppCompatActivity {
         pulsante.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                pulsante.setText(getResources().getString(peerlaSwitch()));
+                pulsante.setText(testi[new Random().nextInt(testi.length)]);
                 if (mp.isPlaying()){
                     mp.pause();
                 }
                 mp.seekTo(0);
                 mp.start();
+
                 Random rnd = new Random();
                 int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
                 constID.setBackgroundColor(color);
