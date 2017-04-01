@@ -2,6 +2,7 @@ package developers.edoeigor.soundbutton;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
@@ -11,8 +12,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button pulsante = (Button)findViewById(R.id.pulsante_0);
-
+        final Button pulsante = (Button)findViewById(R.id.pulsante_0);
+        pulsante.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pulsante.setText(getResources().getString(R.string.btn_text));
+            }
+        });
 
     }
 }
